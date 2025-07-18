@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fasih Ahmed Raza | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f7fa;
+      color: #222f3e;
+    }
+    .header {
+      background: #222f3e;
+      color: #fff;
+      text-align: center;
+      padding: 48px 16px 24px 16px;
+    }
+    .header h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+    }
+    .header p {
+      margin: 0;
+      font-size: 1.15rem;
+      font-style: italic;
+      color: #c8d6e5;
+    }
+    .container {
+      max-width: 750px;
+      margin: 36px auto;
+      padding: 0 18px;
+    }
+    .section {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 20px rgba(34,47,62,0.08);
+      margin-bottom: 30px;
+      padding: 30px 28px;
+    }
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+      color: #222f3e;
+      letter-spacing: 1px;
+    }
+    .bio {
+      color: #576574;
+      font-size: 1.09rem;
+      line-height: 1.7;
+    }
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 1.08rem;
+    }
+    .contact-list li {
+      margin-bottom: 10px;
+    }
+    .contact-list a {
+      color: #0984e3;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .contact-list a:hover {
+      color: #222f3e;
+      text-decoration: underline;
+    }
+    /* Simple Button for JS Demo */
+    .js-btn {
+      background: #0984e3;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 22px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 10px;
+    }
+    .js-btn:hover {
+      background: #222f3e;
+    }
+    .js-message {
+      margin-top: 15px;
+      font-size: 1.07rem;
+      color: #10ac84;
+      min-height: 24px;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+    @media (max-width: 600px) {
+      .container, .section {
+        padding: 16px 8px;
+      }
+      .header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Fasih Ahmed Raza</h1>
+    <p>Full Stack Developer | AI Chatbot Developer</p>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="section-title">About Me</div>
+      <div class="bio">
+        I’m Fasih Ahmed Raza, an experienced Full Stack Developer and AI Chatbot Developer with two years of proven expertise. I have successfully delivered 50+ chatbot solutions to various companies, helping them boost their business performance.<br><br>
+        I specialize in building intelligent chatbots using advanced technologies like LLM, Generative AI, and more, driving innovation and enhancing user experiences.
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-title">Contact</div>
+      <ul class="contact-list">
+        <li>
+          Email:
+          <a href="mailto:thisfasih@gmail.com">thisfasih@gmail.com</a>
+        </li>
+        <li>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/thisfasih/" target="_blank" rel="noopener">
+            https://www.linkedin.com/in/thisfasih/
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="section">
+      <div class="section-title">Say Hi!</div>
+      <button class="js-btn" onclick="sayHi()">Click Me</button>
+      <div class="js-message" id="js-message"></div>
+    </div>
+  </div>
+  <script>
+    function sayHi() {
+      const msg = document.getElementById('js-message');
+      msg.style.opacity = 0;
+      setTimeout(() => {
+        msg.textContent = "👋 Hello, thanks for visiting my portfolio!";
+        msg.style.opacity = 1;
+      }, 200);
+    }
+  </script>
+</body>
+</html>
